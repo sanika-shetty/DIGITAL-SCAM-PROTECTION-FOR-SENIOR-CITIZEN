@@ -8,14 +8,14 @@ import http from "http";
 import cors from "cors";
 import helmet from "helmet";
 import morgan from "morgan";
-import dotenv from "dotenv";
+import "dotenv/config";
 import { WebSocketServer } from "ws";
 
 import apiRoutes from "./routes/api.js";
 import { setWebSocketServer } from "./utils/broadcaster.js";
 import { isFirebaseLive } from "./config/firebase.js";
 
-dotenv.config();
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
