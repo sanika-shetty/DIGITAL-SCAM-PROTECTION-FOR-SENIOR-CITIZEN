@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F172A"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Top Header -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🛡️ GUARDIAN BOT"
+        android:textColor="#38BDF8"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senior Safety &amp; Scam Shield"
+        android:textColor="#94A3B8"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp" />
+
+    <!-- Active Shield Badge Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1E293B"
+        android:padding="20dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvShieldStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🟢 SHIELD IS ACTIVE"
+            android:textColor="#4ADE80"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calls and messages are scanned automatically. Family is connected."
+            android:textColor="#E2E8F0"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Giant Emergency SOS Button -->
+    <Button
+        android:id="@+id/btnEmergencySos"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="🚨 EMERGENCY SOS"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:backgroundTint="#EF4444"
+        android:layout_marginTop="32dp" />
+
+    <!-- Quick Call Family Buttons -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quick Family Connect"
+        android:textColor="#F8FAFC"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="28dp" />
+
+    <Button
+        android:id="@+id/btnCallSon"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="📞 Call Aarav (Son)"
+        android:textColor="#0F172A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#38BDF8"
+        android:layout_marginTop="12dp" />
+
+    <!-- Test Voice Button -->
+    <Button
+        android:id="@+id/btnTestShield"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🔊 Test Voice Warning"
+        android:textColor="#E2E8F0"
+        android:textSize="16sp"
+        android:backgroundTint="#334155"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

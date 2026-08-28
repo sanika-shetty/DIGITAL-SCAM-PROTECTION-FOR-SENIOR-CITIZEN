@@ -1,0 +1,5 @@
+[wokwi]
+version = 1
+firmware = "build/hardware-sim.ino.bin"
+elf = "build/hardware-sim.ino.elf"
+diagram = "diagram.json"
