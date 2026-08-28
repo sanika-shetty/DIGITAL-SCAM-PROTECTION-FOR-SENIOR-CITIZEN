@@ -54,8 +54,8 @@
     }
   ],
   "connections": [
-    [ "esp:TX", "$serial:rx", "", [] ],
-    [ "esp:RX", "$serial:tx", "", [] ],
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+[ "esp:RX0", "$serialMonitor:TX", "", [] ],
     [ "esp:4", "btn1:2.l", "orange", [ "h-20", "v10" ] ],
     [ "btn1:1.l", "esp:GND.1", "black", [ "h-10", "v70", "h140" ] ],
     [ "esp:2", "r1:1", "green", [ "h20", "v0" ] ],
@@ -67,5 +67,9 @@
     [ "esp:5", "bz1:2", "purple", [ "h30", "v-80" ] ],
     [ "bz1:1", "esp:GND.1", "black", [ "v20", "h-120" ] ]
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "serialMonitor": {
+    "display": "always"
+  }
 }
+  
